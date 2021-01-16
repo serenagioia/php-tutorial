@@ -1,0 +1,26 @@
+<! doctype html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+  </head>
+  <body>
+    <?php
+    $nome = "serena";
+    $anni = 17;
+    echo "mi chiamo $nome e ho $anni anni";
+    echo "<br>";
+    
+    $nome = (bool)$nome;
+    echo "voglio trasformare la variabile $ nome in un booleano: ";
+    var_dump($nome); //mi restituisce true perché non è vuota o 0, in quel caso avrebbe restituito false
+echo "<br>";
+    //provo a trasformare un array in un booleano e farmi restuire false:
+
+   $arr = ['data'=>'1601','anno'=>'2021'];
+   echo "voglio trasformare la variabile $ arr in boolean: ";
+   $arr = (bool)$arr;
+   var_dump($arr);
+    ?>
+  </body>
+</html>
